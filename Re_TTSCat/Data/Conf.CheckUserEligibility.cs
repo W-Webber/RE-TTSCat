@@ -41,7 +41,7 @@ namespace Re_TTSCat.Data
         {
             if (Vars.CurrentConf.BlockUID)
             {
-                if (!CheckUserEligibility(e.Danmaku.UserID.ToString()))
+                if (!CheckUserEligibility(e.Danmaku.UserID_str))
                 {
                     Bridge.ALog("忽略：用户已命中 UID 规则");
                     return false;

@@ -22,11 +22,11 @@ namespace Re_TTSCat
                 case MsgTypeEnum.GiftSend:
                     if (Vars.CurrentConf.GiftsThrottle)
                     {
-                        ALog($"礼物合并已启用，正在合并礼物: 来自 {e.Danmaku.UserName} ({e.Danmaku.UserID}) 的 {e.Danmaku.GiftCount} 个 {e.Danmaku.GiftName}");
+                        ALog($"礼物合并已启用，正在合并礼物: 来自 {e.Danmaku.UserName} ({e.Danmaku.UserID_long}) 的 {e.Danmaku.GiftCount} 个 {e.Danmaku.GiftName}");
                         Vars.Debouncer.Add(new UserGift
                         (
                             e.Danmaku.UserName,
-                            e.Danmaku.UserID,
+                            e.Danmaku.UserID_long,
                             e.Danmaku.GiftName,
                             e.Danmaku.GiftCount
                         ));
