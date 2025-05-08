@@ -227,6 +227,10 @@
                                 <TextBox Height="23" x:Name="TextBox_InteractSpecialFollow"/>
                             </StackPanel>
                             <StackPanel Margin="0,5,0,0">
+                                <local:IconTextBlock IconGlyph="&#xF004;" Text="观众点赞直播间"/>
+                                <TextBox Height="23" x:Name="TextBox_InteractLike"/>
+                            </StackPanel>
+                            <StackPanel Margin="0,5,0,0">
                                 <local:IconTextBlock IconGlyph="&#xF362;" Text="观众与主播互相关注直播间"/>
                                 <TextBox Height="23" x:Name="TextBox_InteractMutualFollow"/>
                             </StackPanel>

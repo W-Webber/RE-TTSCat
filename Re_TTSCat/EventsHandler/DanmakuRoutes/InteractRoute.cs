@@ -31,6 +31,9 @@ namespace Re_TTSCat
                 case InteractTypeEnum.SpecialFollow:
                     result = ProcessInteract(e.Danmaku, Vars.CurrentConf.OnInteractSpecialFollow);
                     break;
+                case InteractTypeEnum.Like:
+                    result = ProcessInteract(e.Danmaku, Vars.CurrentConf.OnInteractLike);
+                    break;
                 default: return;
             }
 

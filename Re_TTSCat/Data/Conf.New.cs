@@ -103,6 +103,7 @@ namespace Re_TTSCat.Data
             OnInteractMutualFollow = "感谢 $USER 的互关";
             OnInteractShare = "感谢 $USER 分享直播间";
             OnInteractSpecialFollow = "感谢 $USER 的特别关注";
+            OnInteractLike = "感谢 $USER 的点赞";
             VoiceReplyRules = new List<VoiceReplyRule>();
         }
     }

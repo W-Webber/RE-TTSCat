@@ -331,6 +331,10 @@ namespace Re_TTSCat.Data
         /// </summary>
         public string OnInteractSpecialFollow { get; set; }
         /// <summary>
+        /// 当用户点赞读出内容
+        /// </summary>
+        public string OnInteractLike { get; set; }
+        /// <summary>
         /// 语音答复规则列表
         /// </summary>
         public List<VoiceReplyRule> VoiceReplyRules { get; set; }
